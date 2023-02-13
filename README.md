@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# Bill Creator App
+This is a simple Bill Creator App built with ReactJS.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Features
+- Add items to the bill
+- Delete items from the bill
+- Calculate the total cost of the bill
+- Save the bill as a PDF file
+# Technologies
+This project was built using:
 
-## Available Scripts
+- ReactJS
+- HTML
+- CSS
+# Installation
+To install this project on your local machine, follow these steps:
 
-In the project directory, you can run:
+- Clone the repository:
+![S1](https://user-images.githubusercontent.com/124572978/218463248-90c94bd4-6f64-4dd7-9c1b-c55a24eb6a4f.jpg)
 
-### `npm start`
+- Navigate into the project directory:
+![S2](https://user-images.githubusercontent.com/124572978/218463368-5470e52a-0103-4f51-a430-f1399c149957.jpg)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Install the required dependencies:
+![S3](https://user-images.githubusercontent.com/124572978/218463420-9efd9cb6-3a42-4113-a894-270bf550347c.jpg)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Start the app:
+![S4](https://user-images.githubusercontent.com/124572978/218463583-6679c39f-030d-476d-8c4e-547ac49939ce.jpg)
 
-### `npm test`
+- Open your browser and go to:
+![S5](https://user-images.githubusercontent.com/124572978/218463644-08c713cb-946b-47ad-b627-c83b3ba90357.jpg)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Usage
+To use this app, follow these steps:
 
-### `npm run build`
+- Enter the item name, quantity, and price in the input fields
+- Click the "Add Item" button to add the item to the bill
+- To delete an item, click the "Delete" button next to the item
+- To calculate the total cost of the bill, click the "Calculate Total" button
+- To save the bill as a PDF file, click the "Save Bill" button
+#License
+This project is licensed under the MIT License.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![SS1](https://user-images.githubusercontent.com/124572978/218464326-a39d7139-7d77-4c8f-a4e2-fc282cc11333.jpg)
+![SS2](https://user-images.githubusercontent.com/124572978/218464347-983fa6cf-1e1e-4f79-b420-55d69baa2e84.jpg)
+![SS3](https://user-images.githubusercontent.com/124572978/218464371-7d3350e6-b6fe-4fc8-b057-a08314345219.jpg)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
