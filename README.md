@@ -38,7 +38,8 @@ To use this app, follow these steps:
 - To delete an item, click the "Delete" button next to the item
 - To calculate the total cost of the bill, click the "Calculate Total" button
 - To save the bill as a PDF file, click the "Save Bill" button
-#License
+
+# License
 This project is licensed under the MIT License.
 
 ![SS1](https://user-images.githubusercontent.com/124572978/218464326-a39d7139-7d77-4c8f-a4e2-fc282cc11333.jpg)
