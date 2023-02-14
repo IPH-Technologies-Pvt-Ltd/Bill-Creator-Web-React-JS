@@ -15,9 +15,6 @@ This project was built using:
 # Installation
 To install this project on your local machine, follow these steps:
 
-- Clone the repository:
-![S1](https://user-images.githubusercontent.com/124572978/218463248-90c94bd4-6f64-4dd7-9c1b-c55a24eb6a4f.jpg)
-
 - Navigate into the project directory:
 ![S2](https://user-images.githubusercontent.com/124572978/218463368-5470e52a-0103-4f51-a430-f1399c149957.jpg)
 
