@@ -47,9 +47,7 @@ function ViewOrUpdateBilling(props) {
 
         console.log("res", res.data.bill);
       })
-      .catch(() => {
-        alert("something went wrong");
-      });
+      .catch((error) => {});
   }, []);
 
   const handleChange = (index, e) => {
@@ -157,7 +155,7 @@ function ViewOrUpdateBilling(props) {
           >
             <Row>
               <Col md="6" className="align-self-center">
-                <Image src="/images/IPH-LOGO.png" />
+                <Image />
               </Col>
               <Col md="6">
                 <Form.Text>

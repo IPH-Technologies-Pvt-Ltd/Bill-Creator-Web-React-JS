@@ -6,6 +6,7 @@ import Accounts from "./Components/Accounts";
 import Home from "./Components/Home";
 import ViewOrUpdateBilling from "./Components/ViewOrUpdateBilling";
 import Edit from "./Components/Edit";
+import CreateBill from "./Components/CreateBill";
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
         {/* <Route exact path="Edit" element={<Edit />} /> */}
 
         <Route path="/" element={<Home />} />
-        <Route exact path="/create-new-bill" element={<Accounts />} />
+        <Route exact path="/create-new-bill" element={<CreateBill />} />
         <Route path="/view" element={<ViewOrUpdateBilling />} />
         <Route path="/Edit" element={<Edit />} />
       </Routes>

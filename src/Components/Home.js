@@ -27,13 +27,10 @@ export default function Home() {
   }, []);
 
   const loadUsers = async () => {
-    const result = await axios.get(
-      "https://ebilling.iphtechnologies.com/API/api/getbill"
-    );
-    // console.log("1234", result);
+    const result = await axios.get("http://localhost:3001/users");
+    console.log("1234", result);
 
     setData(result?.data);
-    data?.bill.length > 2 ? setRemove1(true) : setRemove1(false);
   };
 
   const handleCheckbox = (index = "", e) => {
@@ -57,12 +54,9 @@ export default function Home() {
   };
 
   const deleteAll = async () => {
-    await axios.post(
-      "https://ebilling.iphtechnologies.com/API/api/bill/delete",
-      {
-        ids: data?.bill.filter((item) => item?.isChecked === true),
-      }
-    );
+    await axios.post("http://localhost:3001/users", {
+      ids: data?.bill.filter((item) => item?.isChecked === true),
+    });
     loadUsers();
     window.location.reload();
   };
@@ -70,12 +64,7 @@ export default function Home() {
   console.log(deleteAction);
 
   const deleteUser = async (id) => {
-    await axios.post(
-      "https://ebilling.iphtechnologies.com/API/api/bill/delete",
-      {
-        ids: [id],
-      }
-    );
+    await axios.delete(`http://localhost:3001/users/${id}`);
     loadUsers();
     setShow(false);
     window.location.reload();
@@ -130,15 +119,9 @@ export default function Home() {
         </Modal.Footer>
       </Modal>
 
-      <Table className="striped bordered hover">
+      <Table responsive striped>
         <thead>
           <tr>
-            <td>
-              {data?.bill.length > 0 && (
-                <Form.Check onChange={(e) => handleCheckbox("", e)} />
-              )}
-            </td>
-
             <th>Invoice No.</th>
             <th>Paid To</th>
             <th>Creation Date</th>
@@ -147,38 +130,34 @@ export default function Home() {
         </thead>
         <tbody>
           {data &&
-            data.bill?.map((values, index) => {
+            data?.map((values, index) => {
               return (
                 <tr key={index}>
-                  {
-                    <td>
-                      <Form.Check
-                        value={values.id}
-                        checked={values.isChecked}
-                        onChange={(e) => handleCheckbox(index, e)}
-                      />
-                    </td>
-                  }
                   <td>{values.invoice_no}</td>
                   <td>{values.paid_to}</td>
-                  <td>{moment(values.created_at).format("DD MMM, YYYY")}</td>
+                  <td>{values.creation_date}</td>
                   <td>
-                    <NavLink className="btn btn-light btn-sm" to="/View">
-                      View
-                    </NavLink>
-                    <NavLink
-                      className="btn btn-primary  btn-sm mx-2"
-                      to="/Edit"
-                    >
-                      Edit
-                    </NavLink>
-
-                    <Button
-                      className="btn btn-danger  btn-sm"
-                      onClick={() => handleShow("delete", values.id)}
-                    >
-                      Delete
-                    </Button>
+                    <div style={{ display: "flex" }}>
+                      <NavLink
+                        style={{ backgroundColor: "green", color: "white" }}
+                        className="btn btn-light btn-sm"
+                        to="/View"
+                      >
+                        View
+                      </NavLink>
+                      <NavLink
+                        className="btn btn-primary  btn-sm mx-2"
+                        to="/Edit"
+                      >
+                        Edit
+                      </NavLink>
+                      <Button
+                        className="btn btn-danger  btn-sm"
+                        onClick={() => handleShow("delete", values.id)}
+                      >
+                        Delete
+                      </Button>
+                    </div>
                   </td>
                 </tr>
               );

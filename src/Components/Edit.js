@@ -221,7 +221,7 @@ function Edit() {
           >
             <Row className="mt-4 mb-4">
               <Col md="6" className="align-self-center">
-                <Image src="/images/IPH-LOGO.png" />
+                <Image />
               </Col>
               <Col md="6">
                 <Form.Text>
