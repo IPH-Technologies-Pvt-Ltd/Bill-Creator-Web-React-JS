@@ -39,7 +39,6 @@ To use this app, follow these steps:
 # License
 This project is licensed under the MIT License.
 
-![SS1](https://user-images.githubusercontent.com/124572978/218464326-a39d7139-7d77-4c8f-a4e2-fc282cc11333.jpg)
-![SS2](https://user-images.githubusercontent.com/124572978/218464347-983fa6cf-1e1e-4f79-b420-55d69baa2e84.jpg)
-![SS3](https://user-images.githubusercontent.com/124572978/218464371-7d3350e6-b6fe-4fc8-b057-a08314345219.jpg)
-
+<img src="https://user-images.githubusercontent.com/124572978/219279014-8c918eed-6803-422b-8097-397371ebbd5f.gif" 
+     width="500" 
+     height="300" />
